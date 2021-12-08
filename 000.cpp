@@ -14,12 +14,9 @@
 typedef long long int ll;
 typedef long double ld;
 using namespace std;
-// ll mod=67280421310721;
-// const ll mod=998244353;
 const ll mod=1e9+7;
 ll INF=1e18;
 const ll N=300005;
-//power calculator using exponentiation
 ll po(ll a,ll b)
 {
     ll re=1;  
