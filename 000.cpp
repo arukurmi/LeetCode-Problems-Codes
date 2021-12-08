@@ -1,51 +1,51 @@
-// #include <bits/stdc++.h>
-// #include <string>
-// #include <cmath>
-// #include <sstream>
-// #include <unordered_map>
-// #define fori(i, a, b) for (ll i = (a); i < (b); i++)
-// #define ford(i, a, b) for(ll i = (a-1); i >= (b); i--)
-// #define pb(a) push_back(a)
-// #define pp() pop_back()
-// #define mp(a,b) make_pair(a,b)
-// #define ff first
-// #define ss second
-// #define spre cout<<fixed<<setprecision(1);
-// typedef long long int ll;
-// typedef long double ld;
-// using namespace std;
-// const ll mod=1e9+7;
-// ll INF=1e18;
-// const ll N=300005;
-// ll po(ll a,ll b)
-// {
-//     ll re=1;  
-//     while(b)
-//     {
-//         if(b%2==1)
-//         {
-//             re=(re*a);
-//             re%=mod;
-//         }
-//         a=(a*a);
-//         a%=mod;
-//         b>>=1;
-//     }
-//     return re;
-// }
+#include <bits/stdc++.h>
+#include <string>
+#include <cmath>
+#include <sstream>
+#include <unordered_map>
+#define fori(i, a, b) for (ll i = (a); i < (b); i++)
+#define ford(i, a, b) for(ll i = (a-1); i >= (b); i--)
+#define pb(a) push_back(a)
+#define pp() pop_back()
+#define mp(a,b) make_pair(a,b)
+#define ff first
+#define ss second
+#define spre cout<<fixed<<setprecision(1);
+typedef long long int ll;
+typedef long double ld;
+using namespace std;
+const ll mod=1e9+7;
+ll INF=1e18;
+const ll N=300005;
+ll po(ll a,ll b)
+{
+    ll re=1;  
+    while(b)
+    {
+        if(b%2==1)
+        {
+            re=(re*a);
+            re%=mod;
+        }
+        a=(a*a);
+        a%=mod;
+        b>>=1;
+    }
+    return re;
+}
 
-// void solve(){
-// }
+void solve(){
+}
 
-// int main(){
-//     ios_base::sync_with_stdio(false);
-//     cin.tie(NULL);
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     
-//     // ll t;
-//     // // cin>>t;
-//     // t = 1;
-//     while(t--){
-//         solve();
-//     }
-//     return 0;
-// }
+    ll t;
+    // cin>>t;
+    t = 1;
+    while(t--){
+        solve();
+    }
+    return 0;
+}
