@@ -1,3 +1,8 @@
+// Problem Description:
+// Given two strings A and B. Find the longest common sequence ( A sequence which does not need to be contiguous), which is common in both the strings.
+// You need to return the length of such longest common subsequence.
+
+
 int Solution::solve(string a, string b){
 
     int n = a.length();
