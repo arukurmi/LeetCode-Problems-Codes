@@ -14,7 +14,6 @@ int Solution::lengthOfLongestSubstring(string s){
     
     while(r<len){
         char temp = s[r];
-
         if(mp.find(temp) != mp.end()){
             while(mp[temp]){
                 mp[s[l]]--;
@@ -26,8 +25,6 @@ int Solution::lengthOfLongestSubstring(string s){
         winlen = r-l+1;
         ans = max(winlen, ans);
         r++;
-
     }
-
     return ans;
 }
