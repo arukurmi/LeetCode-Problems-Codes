@@ -44,3 +44,28 @@ vector<vector<string> > Solution::solveNQueens(int n){
     
     return v;
 }
+
+
+void solve(vector<int> &left, vector<int> &upperdia, vector<int> &lowerdia, vector<string> &board, vector<vector<string>> &v, int col, int n){
+
+    if(col == n){
+        v.push_back(board);
+        return;
+    }
+
+    for(int i=0; i<n; i++){
+        if(board[i][col] == '.' && upperdia[n-1+col-i] == 0 && lowerdia[col+i] == 0 && left[i] == 0){
+            board[i][col] = 'Q';
+            upperdia[n-1+col-i] = 1;
+            lowerdia[col+i] = 1;
+            left[i] = 1;
+            solve(left, upperdia, lowerdia, board, v, col+1, n);
+            board[i][col] = '.';
+            upperdia[n-1+col-i] = 0;
+            lowerdia[col+i] = 0;
+            left[i] = 0;
+        }
+    }
+
+    return;
+}
