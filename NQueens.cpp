@@ -22,7 +22,7 @@
 //   ".Q.."]
 // ]
 
-#include<stdio.h>
+#include<iostream>
 using namespace std;
 
 vector<vector<string> > Solution::solveNQueens(int n){
