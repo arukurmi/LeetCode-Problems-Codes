@@ -17,9 +17,8 @@ public:
         
         else{
             int j = n-1;
-            while(j>=0 && nums[j] <= nums[lastMin]){
-                j--;
-            }
+            while(j>=0 && nums[j] <= nums[lastMin]) j--;
+            
             swap(nums[j] , nums [lastMin]);
             reverse(nums.begin() + lastMin + 1 , nums.end());
         }
