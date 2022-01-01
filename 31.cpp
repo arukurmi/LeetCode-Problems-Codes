@@ -23,7 +23,6 @@ public:
             swap(nums[j] , nums [lastMin]);
             reverse(nums.begin() + lastMin + 1 , nums.end());
         }
-        
         return;        
     }
 };
