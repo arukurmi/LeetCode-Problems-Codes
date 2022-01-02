@@ -1,8 +1,8 @@
 // Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
-
 // Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
-class Solution {
+
+class Solution{
 public:
     string multiply(string s, string t) {
         
@@ -41,6 +41,6 @@ public:
             ans.push_back(res[i] + '0');
         }
         
-        return ans;        
+        return ans;
     }
 };
