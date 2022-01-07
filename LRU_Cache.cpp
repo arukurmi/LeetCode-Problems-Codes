@@ -23,6 +23,7 @@ int LRUCache::get(int key){
         auto itr = info[key];
         value = itr->second;
         keys.erase(itr);
+        
         keys.push_front(make_pair(key, value));
         info[key] = keys.begin();
     }
