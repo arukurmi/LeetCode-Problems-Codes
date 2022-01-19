@@ -2,3 +2,33 @@
 
 // You must write an algorithm with O(log n) runtime complexity.
 
+class Solution {
+public:
+    int searchInsert(vector<int>& v, int t){
+        
+        int n = v.size();
+        int s = 0, e = n-1;
+        
+        while(s<=e){
+            // if(v[i] == t){
+            //     return i;
+            // }
+            // if(v[i] > t){
+            //     return i;
+            // }
+            
+            int mid = s+(e-s)/2;
+            
+            if(v[mid] == t){
+                return mid;
+            }
+            
+            if(v[mid] < t) s = mid+1;
+            
+            else e=mid-1;
+            
+        }
+        
+        return s;
+    }
+};
