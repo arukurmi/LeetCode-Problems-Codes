@@ -3,7 +3,6 @@
 class Solution{
 public:
     string multiply(string s, string t) {
-        
         int n = s.length();
         int m = t.length();
         
